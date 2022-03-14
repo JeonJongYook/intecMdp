@@ -1,6 +1,6 @@
 package com.webmister.semicolon.request;
 
-import com.webmister.semicolon.dto.Post;
+import com.webmister.semicolon.dto.EssentialReportInfo;
 import com.webmister.semicolon.domain.Report;
 import com.webmister.semicolon.domain.UserInfo;
 import lombok.Data;
@@ -12,7 +12,7 @@ import java.util.List;
 public class FindUserOnlyOneResponse {
     String email;
     String password;
-    List<Post> postList;
+    List<EssentialReportInfo> postList;
 
     public FindUserOnlyOneResponse(UserInfo userInfo){
         this.postList = new ArrayList<>();
@@ -23,7 +23,7 @@ public class FindUserOnlyOneResponse {
 
     private void modifyReportTopost(List<Report> reportList){
         for(Report report: reportList){
-            this.getPostList().add(new Post(report));
+            this.getPostList().add(new EssentialReportInfo(report));
         }
     }
 

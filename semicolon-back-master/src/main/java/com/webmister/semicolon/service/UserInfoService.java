@@ -59,10 +59,10 @@ public class UserInfoService {
                     .userDescription(userInfoRequest.getUserDescription())
                     .build());
             return Boolean.TRUE;
-
         } catch (Exception e) {
             return Boolean.FALSE;
         }
+
     }
 
 

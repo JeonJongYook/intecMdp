@@ -2,7 +2,7 @@ package com.webmister.semicolon.controller;
 
 import com.webmister.semicolon.domain.Report;
 import com.webmister.semicolon.domain.UserInfo;
-import com.webmister.semicolon.dto.Post;
+import com.webmister.semicolon.dto.EssentialReportInfo;
 import com.webmister.semicolon.request.FindUserOnlyOneResponse;
 import com.webmister.semicolon.request.UserInfoRequest;
 import com.webmister.semicolon.response.FindUserOnlyOneRequest;

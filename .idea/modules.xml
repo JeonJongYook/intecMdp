@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/intecmdp.iml" filepath="$PROJECT_DIR$/.idea/intecmdp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semicolon-back-master/semicolon.iml" filepath="$PROJECT_DIR$/semicolon-back-master/semicolon.iml" />
     </modules>
   </component>
 </project>

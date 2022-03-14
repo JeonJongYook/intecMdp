@@ -16,9 +16,9 @@ public class Report {
     Long id;
 
 
-    @Column
-    @CreationTimestamp
-    private Timestamp reportCreatTime;
+//    @Column
+//    @CreationTimestamp
+//    private Timestamp reportCreatTime;
 
 
     @Column

@@ -4,13 +4,13 @@ import com.webmister.semicolon.domain.Report;
 import lombok.Data;
 
 @Data
-public class Post {
+public class EssentialReportInfo {
     String title;
     String contents;
     String description;
     String writingtime;
 
-    public Post(Report report){
+    public EssentialReportInfo(Report report){
         this.title = report.getTitle();
         this.contents = report.getContents();
         this.writingtime = report.getWritingtime();

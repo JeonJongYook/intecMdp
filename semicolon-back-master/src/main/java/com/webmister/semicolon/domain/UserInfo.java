@@ -1,7 +1,7 @@
 package com.webmister.semicolon.domain;
 
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
+//import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -27,9 +27,9 @@ public class UserInfo {
     @Column(nullable = false)
     private String userNickName;
 
-    @CreationTimestamp
-    @Column(nullable = false)
-    private Timestamp userCreateTime;
+//    @CreationTimestamp
+//    @Column(nullable = false)
+//    private Timestamp userCreateTime;
 
     @Column(nullable = false)
     private String userUniqueID;

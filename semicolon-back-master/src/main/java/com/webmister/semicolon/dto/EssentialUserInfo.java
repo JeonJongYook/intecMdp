@@ -29,7 +29,6 @@ public class EssentialUserInfo {
         if(userInfo.getUserDescription() != null) {
             this.userDescription = userInfo.getUserDescription();
         }
-
-
     }
+
 }
