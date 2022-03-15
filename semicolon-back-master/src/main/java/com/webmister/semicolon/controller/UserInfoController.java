@@ -50,7 +50,6 @@ public class UserInfoController {
 
         HttpHeaders resHeaders = new HttpHeaders();
         resHeaders.add("Content-Type", "application/json;charset=UTF-8");
-
         return new ResponseEntity<>( findUserOnlyOneResponse,resHeaders,  HttpStatus.OK);
     }
 

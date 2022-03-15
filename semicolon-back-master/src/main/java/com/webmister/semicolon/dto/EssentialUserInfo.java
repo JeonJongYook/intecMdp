@@ -15,12 +15,14 @@ public class EssentialUserInfo {
     String userUniqueId;
     String userProfileImageUrl;
     String userDescription;
+    Long userInfoid;
 
     public EssentialUserInfo(UserInfo userInfo) {
         this.userEmail = getUserEmail();
         this.password = getPassword();
         this.userNickname = getUserNickname();
         this.userUniqueId = getUserUniqueId();
+        this.userInfoid = getUserInfoid();
 
         if(userInfo.getUserProfileImageUrl() != null) {
             this.userProfileImageUrl = userInfo.getUserProfileImageUrl();

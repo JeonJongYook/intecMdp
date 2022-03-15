@@ -10,6 +10,8 @@ public class EssentialReportInfo {
     String description;
     String writingtime;
 
+    Report report;
+
     public EssentialReportInfo(Report report){
         this.title = report.getTitle();
         this.contents = report.getContents();
