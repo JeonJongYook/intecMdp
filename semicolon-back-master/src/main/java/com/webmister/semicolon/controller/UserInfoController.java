@@ -59,10 +59,10 @@ public class UserInfoController {
         resHeaders.add("Content-Type", "application/json;charset=UTF-8");
 
         try {
-            if (userInfoService.checkDupicateEmail(userInfoRequest.getUserEmail()) & userInfoService.checkDupicateUserNickname(userInfoRequest.getUserNickName()))
-                userInfoService.signUp(userInfoRequest);
-        } catch (Exception e) {
-            return new ResponseEntity<>(Boolean.FALSE, resHeaders, HttpStatus.BAD_REQUEST);
+                if (userInfoService.checkDupicateEmail(userInfoRequest.getUserEmail()) & userInfoService.checkDupicateUserNickname(userInfoRequest.getUserNickName()))
+                    userInfoService.signUp(userInfoRequest);
+            } catch (Exception e) {
+                return new ResponseEntity<>(Boolean.FALSE, resHeaders, HttpStatus.BAD_REQUEST);
         }
 
         return new ResponseEntity<>(Boolean.TRUE, resHeaders, HttpStatus.OK);

@@ -2,6 +2,7 @@ package com.webmister.semicolon.domain;
 
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -37,6 +38,10 @@ public class UserInfo {
 
     @Column
     private String userDescription;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Role role;
 
     @OneToMany(mappedBy = "userInfo")
     private List<Report> reportList;

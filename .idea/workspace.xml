@@ -8,8 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/controller/UserInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/dto/EssentialReportInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/dto/EssentialReportInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/dto/EssentialUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/dto/EssentialUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/UserInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/ReportService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/UserInfoService.java" afterDir="false" />
     </list>
@@ -23,6 +22,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -111,6 +111,9 @@
       <workItem from="1647223451648" duration="62000" />
       <workItem from="1647224549826" duration="392000" />
       <workItem from="1647326878463" duration="6270000" />
+      <workItem from="1647338358004" duration="1111000" />
+      <workItem from="1647343048130" duration="515000" />
+      <workItem from="1647343933040" duration="1104000" />
     </task>
     <servers />
   </component>

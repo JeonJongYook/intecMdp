@@ -1,5 +1,6 @@
 package com.webmister.semicolon.service;
 
+import com.webmister.semicolon.domain.Role;
 import com.webmister.semicolon.domain.UserInfo;
 import com.webmister.semicolon.repository.UserInfoRepository;
 import com.webmister.semicolon.request.Login;
@@ -56,6 +57,7 @@ public class UserInfoService {
                     .userUniqueID(userInfoRequest.getUserUniqueID())
                     .userProfileImageUrl(userInfoRequest.getUserProfileImageUrl())
                     .userDescription(userInfoRequest.getUserDescription())
+                    .role(Role.USER)
                     .build());
             return Boolean.TRUE;
         } catch (Exception e) {
