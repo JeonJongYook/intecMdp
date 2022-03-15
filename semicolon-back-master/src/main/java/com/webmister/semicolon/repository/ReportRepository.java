@@ -1,10 +1,11 @@
 package com.webmister.semicolon.repository;
 
 import com.webmister.semicolon.domain.Report;
+import com.webmister.semicolon.domain.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ReportRepository extends JpaRepository<Report, Long> {
-
+    Report findByUserInfo(UserInfo userInfo);
 }

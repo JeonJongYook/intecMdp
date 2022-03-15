@@ -3,9 +3,11 @@ package com.webmister.semicolon.domain;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.security.Timestamp;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -15,11 +17,8 @@ public class Report {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-
-//    @Column
-//    @CreationTimestamp
-//    private Timestamp reportCreatTime;
-
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
+    private LocalDate createDate;
 
     @Column
     private String comment;
@@ -38,6 +37,11 @@ public class Report {
 
     @Column
     String writingtime;
+
+    @PrePersist
+    public void createDate() {
+        this.createDate = LocalDate.now();
+    }
 
     @ManyToOne
     @JoinColumn(name = "userInfoId")

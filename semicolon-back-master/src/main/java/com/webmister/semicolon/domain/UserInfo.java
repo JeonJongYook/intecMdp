@@ -1,10 +1,9 @@
 package com.webmister.semicolon.domain;
 
 import lombok.*;
-//import org.hibernate.annotations.CreationTimestamp;
-
+import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -27,9 +26,8 @@ public class UserInfo {
     @Column(nullable = false)
     private String userNickName;
 
-//    @CreationTimestamp
-//    @Column(nullable = false)
-//    private Timestamp userCreateTime;
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
+    private LocalDate createDate;
 
     @Column(nullable = false)
     private String userUniqueID;
@@ -42,6 +40,11 @@ public class UserInfo {
 
     @OneToMany(mappedBy = "userInfo")
     private List<Report> reportList;
+
+    @PrePersist
+    public void createDate() {
+        this.createDate = LocalDate.now();
+    }
 
 
     public UserInfo setPassword(String password) {
