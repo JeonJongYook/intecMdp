@@ -1,5 +1,6 @@
 package com.webmister.semicolon.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -45,6 +46,11 @@ public class UserInfo {
 
     @OneToMany(mappedBy = "userInfo")
     private List<Report> reportList;
+
+    @ManyToOne
+    @JoinColumn(name = "report")
+    @JsonBackReference
+    Report report;
 
     @PrePersist
     public void createDate() {

@@ -15,7 +15,6 @@ public class EssentialReportInfo {
     public EssentialReportInfo(Report report){
         this.title = report.getTitle();
         this.contents = report.getContents();
-        this.writingtime = report.getWritingtime();
         this.description ="임시";
     }
 }

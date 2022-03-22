@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2ae0bdc-a08c-4560-96a3-d368987640dd" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/ReportComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/dto/ReportCommentInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/request/ReportRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/controller/UserInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/Report.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/dto/EssentialReportInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/dto/EssentialReportInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/repository/ReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/repository/ReportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/repository/UserInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/repository/UserInfoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/ReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/UserInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,13 +85,18 @@
     <option name="enabled" value="false" />
   </component>
   <component name="RunManager">
-    <configuration name="SemicolonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="SemicolonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="semicolon" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.webmister.semicolon.SemicolonApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SemicolonApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,6 +123,9 @@
       <workItem from="1647338358004" duration="1111000" />
       <workItem from="1647343048130" duration="515000" />
       <workItem from="1647343933040" duration="1104000" />
+      <workItem from="1647936323107" duration="402000" />
+      <workItem from="1647936754028" duration="272000" />
+      <workItem from="1647942586258" duration="2186000" />
     </task>
     <servers />
   </component>
@@ -130,5 +142,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar!/lombok/Data.class</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,7 +1,10 @@
 package com.webmister.semicolon.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -10,6 +13,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
+@Builder
 public class Report {
 
     @Id
@@ -20,10 +24,11 @@ public class Report {
     private LocalDate createDate;
 
     @Column
-    private String comment;
+    @ManyToOne
+    private ReportComment reportComment;
 
-    @Column
-    private String reportImageUrl;
+    @Column(nullable = false)
+    private String reportImageUrl = null;
 
     @Column
     private int likeCount;
@@ -34,17 +39,21 @@ public class Report {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String contents;
 
-    @Column
-    String writingtime;
+
 
     @PrePersist
     public void createDate() {
         this.createDate = LocalDate.now();
     }
 
+
     @ManyToOne
     @JoinColumn(name = "userInfoId")
     @JsonBackReference
     UserInfo userInfo;
+
+    public Report() {
+
+    }
 
 }
