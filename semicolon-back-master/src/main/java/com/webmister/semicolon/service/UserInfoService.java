@@ -1,5 +1,6 @@
 package com.webmister.semicolon.service;
 
+import com.webmister.semicolon.domain.Report;
 import com.webmister.semicolon.domain.Role;
 import com.webmister.semicolon.domain.UserInfo;
 import com.webmister.semicolon.repository.UserInfoRepository;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserInfoService {
@@ -66,9 +68,10 @@ public class UserInfoService {
 
     }
 
-
-
-
+    public List<Report> findUserAllReport(UserInfo userInfo) {
+        List<Report> reportList = userInfoRepository.findAllByReportList(userInfoRepository.findById(userInfo.getUser_Id()));
+        return reportList;
+    }
 
 
 

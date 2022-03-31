@@ -1,11 +1,11 @@
 package com.webmister.semicolon.repository;
 
+import com.webmister.semicolon.domain.Report;
 import com.webmister.semicolon.domain.UserInfo;
-import org.apache.catalina.User;
-import org.springframework.data.domain.Example;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 
@@ -21,5 +21,7 @@ public interface UserInfoRepository extends JpaRepository<UserInfo, Long> {
     Optional<UserInfo> findByUserEmail(String email);
 
     Optional<UserInfo> findByPassword(String password);
+
+    List<Report> findAllByReportList(Optional<UserInfo> id);
 
 }

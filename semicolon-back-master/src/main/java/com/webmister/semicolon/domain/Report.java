@@ -1,6 +1,7 @@
 package com.webmister.semicolon.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,6 +11,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.security.Timestamp;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Data
@@ -18,14 +20,15 @@ public class Report {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    Long report_Id;
 
     @DateTimeFormat(pattern = "yyyy-mm-dd")
     private LocalDate createDate;
 
-    @Column
-    @ManyToOne
-    private ReportComment reportComment;
+    @OneToMany(mappedBy = "comment_Id")
+    @JoinColumn(name = "comment_Id")
+    @JsonManagedReference
+    private List<ReportComment> reportComment;
 
     @Column(nullable = false)
     private String reportImageUrl = null;
@@ -40,17 +43,16 @@ public class Report {
     private String contents;
 
 
-
     @PrePersist
     public void createDate() {
         this.createDate = LocalDate.now();
     }
 
-
     @ManyToOne
-    @JoinColumn(name = "userInfoId")
+    @JoinColumn(name = "user_Id")
     @JsonBackReference
-    UserInfo userInfo;
+    private UserInfo userInfo;
+
 
     public Report() {
 

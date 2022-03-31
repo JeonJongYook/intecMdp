@@ -1,6 +1,7 @@
 package com.webmister.semicolon.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -17,7 +18,7 @@ public class UserInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    Long user_Id;
 
     @Column(nullable = false)
     private String userEmail;
@@ -44,13 +45,10 @@ public class UserInfo {
     @Column(nullable = false)
     private Role role;
 
-    @OneToMany(mappedBy = "userInfo")
-    private List<Report> reportList;
 
-    @ManyToOne
-    @JoinColumn(name = "report")
-    @JsonBackReference
-    Report report;
+    @OneToMany(mappedBy = "userInfo")
+    @JsonManagedReference
+    private List<Report> reportList;
 
     @PrePersist
     public void createDate() {
@@ -66,9 +64,6 @@ public class UserInfo {
     public UserInfo() {
 
     }
-
-
-
 
 }
 

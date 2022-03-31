@@ -1,12 +1,10 @@
 package com.webmister.semicolon.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Builder;
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -15,10 +13,20 @@ public class ReportComment {
 
     @GeneratedValue
     @Id
-    long id;
+    long comment_Id;
 
     @Column(columnDefinition = "TEXT")
     private String reply;
+
+    @ManyToOne
+    @JsonBackReference
+    @JoinColumn(name = "report_Id")
+    private Report report;
+
+    @ManyToOne
+    @JsonBackReference
+    @JoinColumn(name = "user_Id")
+    private UserInfo userInfo;
 
     public ReportComment() {
 
