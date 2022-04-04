@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d2ae0bdc-a08c-4560-96a3-d368987640dd" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/ReportComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/ReportComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/domain/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/repository/ReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/repository/ReportRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/repository/UserInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/repository/UserInfoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/ReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/semicolon-back-master/src/main/java/com/webmister/semicolon/service/UserInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +136,7 @@
       <workItem from="1648443585249" duration="2309000" />
       <workItem from="1648449581640" duration="111000" />
       <workItem from="1648702323430" duration="5222000" />
+      <workItem from="1649033871940" duration="1412000" />
     </task>
     <servers />
   </component>

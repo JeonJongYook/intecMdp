@@ -8,6 +8,7 @@ import com.webmister.semicolon.request.ReportRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -30,15 +31,11 @@ public class ReportService {
     }
 
 
-    public Report findOneReportResponse(UserInfo userInfo){
+    public Report findOneReportResponse(UserInfo userInfo, Long user_id){
 
-        try {
-            Report findOneReport = reportRepository.getById();
-            return findOneReport;
-        }catch (Exception e) {
-            Report findOneReport = null;
-            return  findOneReport;
-        }
+        ArrayList<Report> oneReportGet = new ArrayList<Report>();
+
+        return oneReportGet.get(Math.toIntExact(user_id));
     }
 
 
